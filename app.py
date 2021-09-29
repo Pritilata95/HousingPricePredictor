@@ -7,7 +7,7 @@ import configparser
 from Searcher import Searcher
 
 app = Flask(__name__)
-port = int(os.getenv('PORT', 31624))
+#port = int(os.getenv('PORT', 31624))
 
 places = []
 bedroom = []
@@ -80,5 +80,5 @@ def getDetails():
 """
     
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(threaded=True, debug=False)
 #    app.run(port=port, debug=False)
