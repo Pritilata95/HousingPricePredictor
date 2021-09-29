@@ -7,3 +7,10 @@ The details and functions of individual scripts are as follow:
 <br>Scraper.py: script for getting data from MagicBricks server
 <br>Predictor.py: script for property price prediction based on different input parameters
 <br>Property.py: script defining various property parameters 
+
+### Steps to run on local environment
+- clone the repository
+- $ pip install requirements.txt
+- cd to repo
+- $ python app.py
+- the app is served on localhost:5000
